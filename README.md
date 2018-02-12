@@ -12,25 +12,25 @@ Take as input three side lengths and return whether the result will be either an
 
 1. Check if the three inputs are the same value (equilateral triangle).
   Example Input: 4, 4, 4
-  Example Output: Equilateral triangle
-2. Account for the possibility that words might have different cases but should still be anagrams
-  * Example Input: Cat act
-  * Example Output: anagrams
-3. Check if the inputs are words
-  * Example Input: ct ct
-  * Example Output: not words
-4. If phrases aren't anagrams, check whether they are antigrams
-  * Example Input: cat dog
-  * Example Output: antigrams
-5. Account for multiple words being anagrams, antigrams, or not real words, disregarding spaces and punctuation
-  * Example Inputs: "act case!" "cat aces."; "dog face" "bill inn"; "tc cat" "ct act"
-  * Example Outputs: anagrams; antigrams; not words
+  Example Output: true
+2. Check if the three inputs do not form a triangle
+  * Example Input: 3, 3, 2
+  * Example Output: true
+3. Check if the three inputs from an isosceles triangle
+  * Example Input: 2, 3, 4
+  * Example Output: true
+4. Return triangle type after checking the three previous conditions
+  * Example Inputs: 5, 5, 5
+  * Example Output: equilateral
+5. Capture user input through HTML forms
+  * Example Inputs: Please enter the triangle sides 5, 5, 5
+  * Example Ouputs: This forms an equilateral triangle
 
 ## Setup/Installation Requirements
 
   1. install ruby 2.2.2
   2. install bundler gem (execute "gem install bundler")
-  3. clone or download anagrams repository
+  3. clone or download triangle repository
   4. run bundler in repository (execute "bundle")
   5. run anagrams_script.rb (execute "ruby anagrams_script.rb")
     * if this does not work try updating the shebang ("#!/...") at top of script file with the absolute path to your ruby interpreter

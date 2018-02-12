@@ -1,1 +1,18 @@
 <h1><%= @description %></h1>
+
+
+<form action="/output">
+  <div class="form-group">
+    <label for="side-a">Length of first side:</label>
+    <input id="a" name="side-a" class="form-control" type="text">
+  </div>
+  <div class="form-group">
+    <label for="side-b">Length of second side: </label>
+    <input id="b" name="side-b" class="form-control" type="text">
+  </div>
+  <div class="form-group">
+    <label for="side-c">Length of third side: </label>
+    <input id="c" name="side-c" class="form-control" type="text">
+  </div>
+  <button type="submit" class="btn bg-info">Go!</button>
+</form>
