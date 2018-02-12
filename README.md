@@ -6,13 +6,13 @@
 
 ## Description
 
-Take as input any two words, return whether they are anagrams (a reordering of the same letters), antigrams (containing none of the same letters) or neither, disregarding case, spaces and punctuation.
+Take as input three side lengths and return whether the result will be either an equilateral, isoceles, scalene or NO triangle.
 
 ## Specifications
 
-1. Check if two words are Anagrams
-  * Example Inputs: cat act; cat cad
-  * Example Outputs: anagrams; no pattern
+1. Check if the three inputs are the same value (equilateral triangle).
+  Example Input: 4, 4, 4
+  Example Output: Equilateral triangle
 2. Account for the possibility that words might have different cases but should still be anagrams
   * Example Input: Cat act
   * Example Output: anagrams
