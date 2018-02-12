@@ -4,14 +4,18 @@ require('pry')
 #shebang necessary?
 class Triangle
 
-  def initialize(side1, side2, side3)
-    @side1 = side1
-    @side2 = side2
-    @side3 = side3
+  def initialize(side_a, side_b, side_c)
+    @side_a = side_a
+    @side_b = side_b
+    @side_c = side_c
   end
 
   def equilateral?
-    return (@side1 == @side2) && (@side1 == @side3)
+    return (@side_a == @side_b) && (@side_a == @side_c)
   end
 
+  # def not_a_triangle?
+  #
+  #   return (@side_a + @side_b > @side_c) || (@side_b + @side_c > @side_a) || (@side_c + @side_a > @side_b)
+  # end
 end
