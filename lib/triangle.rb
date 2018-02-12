@@ -14,8 +14,8 @@ class Triangle
     return (@side_a == @side_b) && (@side_a == @side_c)
   end
 
-  # def not_a_triangle?
-  #
-  #   return (@side_a + @side_b > @side_c) || (@side_b + @side_c > @side_a) || (@side_c + @side_a > @side_b)
-  # end
+  def not_a_triangle?
+
+    return (@side_a + @side_b < @side_c) || (@side_b + @side_c < @side_a) || (@side_c + @side_a < @side_b)
+  end
 end
