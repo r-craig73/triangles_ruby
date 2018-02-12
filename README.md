@@ -6,7 +6,7 @@
 
 ## Description
 
-Take as input three side lengths and return whether the result will be either an equilateral, isoceles, scalene or NO triangle.
+Take as input three side lengths and return whether the result will be either an equilateral, isosceles, scalene or NO triangle.
 
 ## Specifications
 

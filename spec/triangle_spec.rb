@@ -19,4 +19,14 @@ describe('Triangle') do
       expect(triangle.not_a_triangle?).to(eq(false))
     end
   end
+
+  describe('#isosceles') do
+    it('checks if three inputs form an isosceles triangle') do
+      triangle = Triangle.new(3, 3, 1)
+      expect(triangle.isosceles?).to(eq(true))
+      triangle = Triangle.new(1, 1, 1)
+      expect(triangle.isosceles?).to(eq(false))
+    end
+  end
+
 end
