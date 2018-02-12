@@ -22,4 +22,15 @@ class Triangle
     return (@side_a == @side_b) || (@side_b == @side_c) || (@side_c == @side_a)
   end
 
+  def type
+    if equilateral?
+      "equilateral"
+    elsif not_a_triangle?
+      "not a triangle"
+    elsif two_same?
+      "iscosceles"
+    else
+      "normal"
+    end
+  end
 end
