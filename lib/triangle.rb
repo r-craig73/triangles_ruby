@@ -1,4 +1,3 @@
-#!/home/linuxbrew/.linuxbrew/bin/env ruby
 require('pry')
 
 class Triangle
@@ -9,6 +8,17 @@ class Triangle
     @side_c = side_c
   end
 
+  # attr reads
+
+  def side_a
+    @side_a
+  end
+  def side_b
+    @side_b
+  end
+  def side_c
+    @side_c
+  end
   def equilateral?
     return (@side_a == @side_b) && (@side_a == @side_c)
   end
@@ -21,15 +31,15 @@ class Triangle
     return (@side_a == @side_b) || (@side_b == @side_c) || (@side_c == @side_a)
   end
 
-  def type
+  def type_response
     if equilateral?
-      "equilateral"
+      "form an equilateral triangle"
     elsif not_a_triangle?
-      "not a triangle"
+      "does not form a triangle"
     elsif two_same?
-      "iscosceles"
+      "form an iscosceles triangle"
     else
-      "normal"
+      "form a normal triangle"
     end
   end
 end
