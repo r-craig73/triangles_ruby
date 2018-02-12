@@ -1,7 +1,6 @@
 #!/home/linuxbrew/.linuxbrew/bin/env ruby
 require('pry')
 
-#shebang necessary?
 class Triangle
 
   def initialize(side_a, side_b, side_c)
@@ -15,7 +14,7 @@ class Triangle
   end
 
   def not_a_triangle?
-    return (@side_a + @side_b < @side_c) || (@side_b + @side_c < @side_a) || (@side_c + @side_a < @side_b)
+    return ((@side_a + @side_b) <= @side_c) || ((@side_b + @side_c) <= @side_a) || ((@side_c + @side_a) <= @side_b)
   end
 
   def two_same?

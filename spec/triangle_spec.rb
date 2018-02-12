@@ -36,7 +36,7 @@ describe('Triangle') do
       expect(triangle.type).to(eq("equilateral"))
       triangle = Triangle.new(1, 1, 3)
       expect(triangle.type).to(eq("not a triangle"))
-      triangle = Triangle.new(1, 1, 2)
+      triangle = Triangle.new(3, 3, 2)
       expect(triangle.type).to(eq("iscosceles"))
       triangle = Triangle.new(2, 3, 4)
       expect(triangle.type).to(eq("normal"))
