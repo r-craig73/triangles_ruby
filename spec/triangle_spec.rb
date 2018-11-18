@@ -31,15 +31,15 @@ describe('Triangle') do
   end
 
   describe('#type_response') do
-    it('returns type of triangle or "not a triangle"') do
+    it('returns type of triangle or no triangle') do
       triangle = Triangle.new(1, 1, 1)
-      expect(triangle.type_response).to(eq("form an equilateral triangle"))
+      expect(triangle.type_response).to(eq('forms an equilateral triangle'))
       triangle = Triangle.new(1, 1, 3)
-      expect(triangle.type_response).to(eq("does not form a triangle"))
+      expect(triangle.type_response).to(eq('does not form a triangle'))
       triangle = Triangle.new(3, 3, 2)
-      expect(triangle.type_response).to(eq("form an iscosceles triangle"))
+      expect(triangle.type_response).to(eq('forms an iscosceles triangle'))
       triangle = Triangle.new(2, 3, 4)
-      expect(triangle.type_response).to(eq("form a normal triangle"))
+      expect(triangle.type_response).to(eq('forms a normal triangle'))
     end
   end
 end
